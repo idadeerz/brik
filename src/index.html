@@ -1,0 +1,568 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-down.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-right.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/math-plus.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/math-minus.css' rel='stylesheet'>
+
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/twitter.css' rel='stylesheet'>
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/windows.css' rel='stylesheet'>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</head>
+
+<body class="font-inter bg-custom-violet">
+
+<div id="balls" class="2xl:gap-[36.5vw] 2xl:mt-0 mt-24 gap-[28vw] w-full h-[40rem] absolute -z-10 flex justify-center">
+
+  <div class="animate-balls1"><div class="translate-y-[16vw] 2xl:size-[16vw] size-[24vw] bg-gradient-to-t from-custom-pink to-custom-blurple rounded-full"></div></div>
+  <div class="animate-balls2"><div class="2xl:-translate-y-[8vw] size-[18vw] -translate-y-[2vw] bg-gradient-to-b from-custom-pink to-custom-blurple rounded-full"></div></div>
+
+</div>
+
+<div class="2xl:mx-80 lg:mx-48 md:mx-24 mx-4">
+
+  <div id="nav" class="flex mt-12 2xl:mb-0 mb-8 gap-2 content-center justify-center">
+
+    <div class="flex-grow"><img class="max-h-10" src="img/logo/logo-ida.png"></div>
+
+    <div class="lg:inline-block hidden">
+
+      <button class="text-white text-lg m-2 transition underline-offset-12 underline decoration-white/0 hover:decoration-white duration-300"><p>Aanpak</p></button>
+      <button class="text-white text-lg m-2 transition underline-offset-12 underline decoration-white/0 hover:decoration-white duration-300"><p>Diensten</p></button>
+      <button class="text-white text-lg m-2 transition underline-offset-12 underline decoration-white/0 hover:decoration-white duration-300"><p>Werk</p></button>
+      <button class="text-white text-lg m-2 transition underline-offset-12 underline decoration-white/0 hover:decoration-white duration-300"><p>Team</p></button>
+
+    </div>
+
+
+    <div class="flex-grow flex justify-end">
+
+      <button class="text-white text-lg m-2 transition underline-offset-12 underline decoration-white/0 hover:decoration-white duration-300">Jobs</button>
+      <button class="text-white text-lg m-2 transition underline-offset-12 underline decoration-white/0 hover:decoration-white duration-300 flex"><p>NL</p><i class="ml-2 m-auto gg-chevron-down"></i></button>
+
+    </div>
+
+  </div>
+
+  <div id="banner" class="flex lg:flex-row flex-col justify-between">
+
+    <div class="lg:w-[150%] 2xl:w-[80%] w-[100%] lg:py-28 grow-0">
+      
+      <h2 class="text-custom-pink text-5xl leading-normal font-medium">Wij creëren digitale ervaringen waar mensen vrolijk van worden.</h2>
+
+    </div>
+
+    <div class="flex-col mt-auto grow shrink]">
+
+      <div class="flex justify-end">
+
+        <div class="lg:w-[75%] 2xl:w-[100%] w-[50%]">
+
+          <p class="text-white text-2xl leading-normal font-light text-right">Digitale strategieën die jouw bedrijf laten groeien.</p>
+
+        </div>
+
+      </div>
+
+      <div class="flex justify-end">
+
+        <div class="grow-0">
+
+        <button class="border rounded-[1.7rem] mb-12 mt-8 px-6 py-3 w-fit transition-all duration-500 hover:bg-white/10 hover:rounded-2xl group">
+          
+          <p class="text-white text-xl font-light w-fit transition-transaform duration-500 group-hover:scale-105">Start vandaag</p>
+
+        </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="cards-overflow" class="overflow-scroll no-scrollbar">
+
+  <div id="cards" class="flex flex-nowrap w-max h-card gap-8">
+
+    <div id="card-empty" class="2xl:w-80 ml-[-2rem] lg:w-32 w-4"></div>
+
+    <div id="card1" class="bg-cover bg-center bg-[url('./img/cards/deer-edited.webp')] h-card w-card rounded-3xl overflow-hidden flex">
+      <div class="grow-0 self-end px-6 py-6 w-full bg-bottom bg-gradient-to-t from-black/85">
+        <h2 class="text-white drop-shadow-lg text-4xl m-2">The Deer</h2>
+        <p class="text-white drop-shadow-lg text-xl m-2">Artwork, Posca markers op Label 228 sticker</p>
+      </div>
+    </div>
+
+    <div id="card2" class="bg-cover bg-center bg-[url('./img/cards/porsche911.webp')] h-card w-card rounded-3xl overflow-hidden flex">
+      <div class="grow-0 self-end px-6 py-6 w-full bg-bottom bg-gradient-to-t from-black/85">
+        <h2 class="text-white drop-shadow-lg text-4xl m-2">911FEST</h2>
+        <p class="text-white drop-shadow-lg text-xl m-2">Online muziekfestival</p>
+      </div>
+    </div>
+
+    <div id="card3" class="bg-cover bg-center bg-[url('./img/cards/idaidaida.jpg')] h-card w-card rounded-3xl overflow-hidden flex">
+      <div class="grow-0 self-end px-6 py-6 w-full bg-bottom bg-gradient-to-t from-black/85">
+        <h2 class="text-white drop-shadow-lg text-4xl m-2">idaidaida</h2>
+        <p class="text-white drop-shadow-lg text-xl m-2">EP van Ida Deerz</p>
+      </div>
+    </div>
+
+    <div id="card4" class="bg-cover bg-center bg-[url('./img/cards/the-breaks.webp')] h-card w-card rounded-3xl overflow-hidden flex">
+      <div class="grow-0 self-end px-6 py-6 w-full bg-bottom bg-gradient-to-t from-black/85">
+        <h2 class="text-white drop-shadow-lg text-4xl m-2">The Breaks</h2>
+        <p class="text-white drop-shadow-lg text-xl m-2">Album van Ida Deerz</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="2xl:mx-80 lg:mx-48 mx-16 mt-8 mb-16">
+  <a href="niks" class="text-custom-pink transition transition-500 hover:text-white underline underline-offset-12 text-xl">Check alle cases</a>
+</div>
+
+<div class="2xl:mx-80 lg:mx-48 md:mx-24 mx-4">
+
+  <h2 class="text-custom-pink mb-8 text-5xl leading-normal font-light">Onze kracht</h2>
+
+  <div class="flex lg:flex-row flex-col gap-8">
+
+    <div class="lg:w-1/3">
+
+      <div class="bg-custom-pink h-[55vh] lg:h-[35vw] flex flex-col rounded-3xl text-custom-violet overflow-hidden">
+
+        <div class="lg:h-1/2 h-2/3 grow-0 bg-cover bg-center bg-[url('./img/cards/modules2015-2021.webp')]">
+        </div>
+
+        <div class="flex grow flex-col justify-between xl:m-7 lg:m-3 m-7">
+          <div>
+            <p class="2xl:text-lg lg:text-sm text-lg bg-gradient-to-t from-custom-violet to-custom-violet/50 text-transparent bg-clip-text">Leads genererende websites</p>
+            <h3 class="2xl:text-2xl xl:text-xl lg:text-md text-2xl my-4">Je digitaal verhaal geoptimaliseerd om je doel te behalen.</h3>
+          </div>
+
+          <div class="justify-self-end hidden lg:inline">
+            <button class="size-16 bg-custom-lime rounded-full flex"><div class="scale-150 m-auto"><i class="gg-arrow-right"></i></div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:w-1/3">
+
+      <div class="bg-custom-pink h-[55vh] lg:h-[35vw] flex flex-col rounded-3xl text-custom-violet overflow-hidden">
+
+        <div class="lg:h-1/2 h-2/3 grow-0 bg-cover bg-center bg-[url('./img/cards/kixel.webp')]">
+        </div>
+
+        <div class="flex grow flex-col justify-between xl:m-7 lg:m-3 m-7">
+          <div>
+            <p class="2xl:text-lg lg:text-sm text-lg bg-gradient-to-t from-custom-violet to-custom-violet/50 text-transparent bg-clip-text">Digital Commerce</p>
+            <h3 class="2xl:text-2xl xl:text-xl lg:text-md text-2xl my-4">Hoe val je nog op in die overvolle digitale winkelstraat?</h3>
+          </div>
+
+          <div class="justify-self-end hidden lg:inline">
+            <button class="size-16 bg-custom-lime rounded-full flex"><div class="scale-150 m-auto"><i class="gg-arrow-right"></i></div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:w-1/3">
+
+      <div class="bg-custom-pink h-[55vh] lg:h-[35vw] flex flex-col rounded-3xl text-custom-violet overflow-hidden">
+
+        <div class="lg:h-1/2 h-2/3 grow-0 bg-cover bg-center bg-[url('./img/cards/scrunkly.webp')]">
+        </div>
+
+        <div class="flex grow flex-col justify-between xl:m-7 lg:m-3 m-7">
+          <div>
+            <p class="2xl:text-lg lg:text-sm text-lg bg-gradient-to-t from-custom-violet to-custom-violet/50 text-transparent bg-clip-text">App & Web applicaties</p>
+            <h3 class="2xl:text-2xl xl:text-xl lg:text-md text-2xl my-4">Een product ontwikkelen begint met een uitgekiend plan.</h3>
+          </div>
+
+          <div class="justify-self-end hidden lg:inline">
+            <button class="size-16 bg-custom-lime rounded-full flex"><div class="scale-150 m-auto"><i class="gg-arrow-right"></i></div></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="2xl:mx-80 lg:mx-48 md:mx-24 mx-4 lg:flex gap-8 mt-32">
+
+  <img class="rounded-2xl lg:h-[35vw] lg:my-auto mx-auto mb-8" src="img/cards/deer-edited.webp">
+
+  <div class="text-custom-pink my-auto mx-8">
+
+    <h2 class="text-5xl mb-8">Wat wij echt belangrijk vinden</h2>
+
+    <div class="lg:border-t border-custom-pink/40">
+      <label class="m-8">
+        <input checked type="radio" name="option" id="option1" class="hidden peer" />
+
+        <div class="cursor-pointer">
+          <h3 class="text-2xl">1. Vriendelijk voor mensen</h3>
+        </div>
+
+        <div class="float-right peer-checked:inline hidden -translate-y-[17px]"><i class="gg-math-minus"></i></div>
+        <div class="float-right peer-checked:hidden inline -translate-y-[15px]"><i class="gg-math-plus"></i></div>
+
+        <div class="peer-checked:h-32 h-0 transition-[height] overflow-hidden">
+          <p class="text-lg my-3 lg:inline-block hidden">Alles wat we doen is voor mensen, door mensen en met mensen ontwikkeld. Prettig samenwerken vinden wij belangrijk.</p>
+          <p class="text-lg my-3 lg:hidden">Je digitale oplossing begint met de juiste strategie. In een aantal workshops maken wij samen helder hoe jouw digitale oplossing het verschil kan maken.</p>
+        </div>
+      
+      </label>
+    </div>
+
+    <div class="border-t border-custom-pink/40">
+      <label class="m-8">
+        <input type="radio" name="option" id="option2" class="hidden peer" />
+
+        <div class="cursor-pointer">
+          <h3 class="text-2xl">2. Toegankelijk</h3>
+        </div>
+
+        <div class="float-right peer-checked:inline hidden -translate-y-[17px]"><i class="gg-math-minus"></i></div>
+        <div class="float-right peer-checked:hidden inline -translate-y-[15px]"><i class="gg-math-plus"></i></div>
+
+        <div class="peer-checked:h-32 h-0 transition-[height] overflow-hidden">
+          <p class="text-lg my-3">Alles wat we doen bla bla bla gfidgfddfshjf dhdfg dhjsdfhjksdfghjkdf </p>
+        </div>
+      
+      </label>
+    </div>
+    
+    <div class="border-t border-custom-pink/40">
+      <label class="m-8">
+        <input type="radio" name="option" id="option3" class="hidden peer" />
+
+        <div class="cursor-pointer">
+          <h3 class="text-2xl">3. Grondige aanpak</h3>
+        </div>
+
+        <div class="float-right peer-checked:inline hidden -translate-y-[17px]"><i class="gg-math-minus"></i></div>
+        <div class="float-right peer-checked:hidden inline -translate-y-[15px]"><i class="gg-math-plus"></i></div>
+
+        <div class="peer-checked:h-32 h-0 transition-[height] overflow-hidden">
+          <p class="text-lg my-3">Alles wat we doen bla bla bla gf idgfddfsh f dhdfg d jksdfgh jkdf </p>
+        </div>
+
+      </label>
+    </div>
+
+    <div class="border-t border-custom-pink/40">
+      <label class="m-8">
+        <input type="radio" name="option" id="option4" class="hidden peer" />
+
+        <div class="cursor-pointer">
+          <h3 class="text-2xl">4. Oog voor detail</h3>
+        </div>
+
+        <div class="float-right peer-checked:inline hidden -translate-y-[17px]"><i class="gg-math-minus"></i></div>
+        <div class="float-right peer-checked:hidden inline -translate-y-[15px]"><i class="gg-math-plus"></i></div>
+
+        <div class="peer-checked:h-32 h-0 transition-[height] overflow-hidden">
+          <p class="text-lg my-3">Alles wat we doen bla bla bla lorem ipsum of zo weet ik veel haha ha ha</p>
+        </div>
+
+      </label>
+    </div>
+
+    <div class="border-t border-custom-pink/40">
+      <label class="m-8">
+        <input type="radio" name="option" id="option5" class="hidden peer" />
+
+        <div class="cursor-pointer">
+          <h3 class="text-2xl">5. Passie voor digitaal</h3>
+        </div>
+
+        <div class="float-right peer-checked:inline hidden -translate-y-[17px]"><i class="gg-math-minus"></i></div>
+        <div class="float-right peer-checked:hidden inline -translate-y-[15px]"><i class="gg-math-plus"></i></div>
+
+        <div class="peer-checked:h-32 h-0 transition-[height] overflow-hidden">
+          <p class="text-lg my-3">Alles wat we doen bla bla bla. niemand die dit leest toch. oh wacht.</p>
+        </div>
+
+      </label>
+    </div>
+
+    <div class="border-t border-b border-custom-pink/40">
+      <label class="m-8">
+        <input type="radio" name="option" id="option6" class="hidden peer" />
+
+        <div class="cursor-pointer">
+          <h3 class="text-2xl lg:inline-block hidden">6. No bullshit</h3>
+          <h3 class="text-2xl lg:hidden">6. No Bullshit</h3>
+        </div>
+
+        <div class="float-right peer-checked:inline hidden -translate-y-[17px]"><i class="gg-math-minus"></i></div>
+        <div class="float-right peer-checked:hidden inline -translate-y-[15px]"><i class="gg-math-plus"></i></div>
+
+        <div class="peer-checked:h-32 h-0 transition-[height] overflow-hidden">
+          <p class="text-lg my-3">Alles wat we doen bla bla bla gfidg hier staat een tekst, denk ik.</p>
+        </div>
+
+      </label>
+    </div>
+  </div>
+</div>
+
+<div class="2xl:mx-80 lg:mx-48 md:mx-24 mx-4 mt-20">
+
+  <h2 class="text-custom-pink mb-8 text-5xl leading-normal font-light">Grondige aanpak voor waardevol resultaat</h2>
+
+  <div class="grid xl:grid-cols-4 grid-cols-2 gap-4">
+
+    <div class="xl:h-[13vw] overflow-hidden rounded-2xl bg-cover bg-center bg-[url('./img/cards/deer2.png')]">
+
+      <div class="h-full cursor-pointer hover:scale-105 transition underline-offset-12 underline decoration-white/0 hover:decoration-white duration-300 bg-custom-violet/35 2xl:pt-[3vw] lg:pt-[2vw] pt-[3vw]">
+        <div class="2xl:scale-100">
+          <div class="size-24 border-white border-2 rounded-full m-auto flex justify-center">
+            <div class="size-8 border-white border-2 rounded-full m-auto"></div>
+          </div>
+
+          <h2 class="text-white m-3 text-2xl text-center">Ontdekken</h2>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="xl:h-[13vw] overflow-hidden rounded-2xl bg-cover bg-center bg-[url('./img/cards/deer1.webp')]">
+
+      <div class="peer h-full cursor-pointer hover:scale-105 transition underline-offset-12 underline decoration-white/0 hover:decoration-white duration-300 bg-custom-violet/35 2xl:pt-[3vw] lg:pt-[2vw] pt-[3vw]">
+        <div class="2xl:scale-100">
+          <div class="size-24 border-white border-2 rounded-full m-auto flex justify-center">
+            <div class="size-16 border-white border-2 translate-x-[2px] rounded-full my-auto ml-auto flex justify-center">
+              <div class="size-8 border-white border-2 translate-x-[2px] rounded-full my-auto ml-auto"></div>
+            </div>
+          </div>
+
+          <h2 class="text-white m-3 text-2xl text-center">Visualiseren</h2>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="xl:h-[13vw] overflow-hidden rounded-2xl bg-cover bg-center bg-[url('./img/cards/deer3.png')]">
+
+      <div class="h-full cursor-pointer hover:scale-105 transition underline-offset-12 underline decoration-white/0 hover:decoration-white duration-300 bg-custom-violet/35 2xl:pt-[3vw] lg:pt-[2vw] pt-[3vw]">
+        <div class="2xl:scale-100">
+          <div class="size-24 border-white border-2 rounded-full m-auto flex justify-center">
+            <div class="size-16 border-white border-2 -translate-x-[2px] rounded-full my-auto mr-auto flex justify-center">
+              <div class="size-8 border-white border-2 -translate-x-[2px] rounded-full my-auto mr-auto"></div>
+            </div>
+          </div>
+
+          <h2 class="text-white m-3 text-2xl text-center">Ontwikkelen</h2>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="xl:h-[13vw] overflow-hidden rounded-2xl bg-cover bg-center bg-[url('./img/cards/deer4.webp')]">
+
+      <div class="h-full cursor-pointer hover:scale-105 transition underline-offset-12 underline decoration-white/0 hover:decoration-white duration-300 bg-custom-violet/35 2xl:pt-[3vw] lg:pt-[2vw] pt-[3vw]">
+        <div class="2xl:scale-100">
+          <div class="size-24 border-white border-2 rounded-full m-auto flex justify-center">
+            <div class="size-16 border-white border-2 rounded-full m-auto flex justify-center">
+              <div class="size-8 border-white border-2 rounded-full m-auto"></div>
+            </div>
+          </div>
+
+          <h2 class="text-white m-3 text-2xl text-center">Groeien</h2>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<h2 class="2xl:mx-80 lg:mx-48 md:mx-24 mx-4 mt-32 text-custom-pink text-5xl leading-normal font-light">Vertrouwd door grote én kleine merken</h2>
+
+<div class="2xl:mx-80">
+
+  <div class="flex py-8 overflow-scroll no-scrollbar flex-nowrap gap-4 justify-stretch">
+
+    <div id="card-empty" class="lg:hidden w-8"></div>
+
+    <div class="border flex justify-center grow shrink cursor-pointer rounded-2xl h-32 transition-all duration-500 hover:bg-white/10 hover:rounded-lg group">
+      <img class="group-hover:scale-105 transition-transform duration-500 max-w-20 h-32 object-contain mx-6" src="img/logo/logo-ida.png">
+    </div>
+
+    <div class="border flex justify-center grow shrink cursor-pointer rounded-2xl h-32 transition-all duration-500 hover:bg-white/10 hover:rounded-lg group">
+      <img class="group-hover:scale-105 transition-transform duration-500 max-w-20 h-32 object-contain mx-6" src="img/logo/logo-cc.png">
+    </div>
+
+    <div class="border flex justify-center grow shrink cursor-pointer rounded-2xl h-32 transition-all duration-500 hover:bg-white/10 hover:rounded-lg group">
+      <img class="group-hover:scale-105 transition-transform duration-500 max-w-20 h-32 object-contain mx-6" src="img/logo/logo-ida.png">
+    </div>
+
+    <div class="border flex justify-center grow shrink cursor-pointer rounded-2xl h-32 transition-all duration-500 hover:bg-white/10 hover:rounded-lg group">
+      <img class="group-hover:scale-105 transition-transform duration-500 max-w-20 h-32 object-contain mx-6" src="img/logo/logo-cc.png">
+    </div>
+
+    <div class="border flex justify-center grow shrink cursor-pointer rounded-2xl h-32 transition-all duration-500 hover:bg-white/10 hover:rounded-lg group">
+      <img class="group-hover:scale-105 transition-transform duration-500 max-w-20 h-32 object-contain mx-6" src="img/logo/logo-ida.png">
+    </div>
+
+    <div class="border flex justify-center grow shrink cursor-pointer rounded-2xl h-32 transition-all duration-500 hover:bg-white/10 hover:rounded-lg group">
+      <img class="group-hover:scale-105 transition-transform duration-500 max-w-20 h-32 object-contain mx-6" src="img/logo/logo-cc.png">
+    </div>
+
+    <div class="border flex justify-center grow shrink cursor-pointer rounded-2xl h-32 transition-all duration-500 hover:bg-white/10 hover:rounded-lg group">
+      <img class="group-hover:scale-105 transition-transform duration-500 max-w-20 h-32 object-contain mx-6" src="img/logo/logo-ida.png">
+    </div>
+
+  </div>
+
+</div>
+
+<div class="2xl:mx-80 lg:mx-48 md:mx-24 mx-4 mt-32">
+
+  <div class="bg-red-400 rounded-3xl bg-center bg-cover bg-[url('./img/cards/deer-edited.webp')]">
+
+    <div class="2xl:h-[35rem] h-[40rem] bg-custom-violet/35 p-8 flex flex-col justify-between w-full">
+
+      <div class="flex justify-start">
+        <div class="h-12 bg-custom-lime rounded-full flex px-6">
+          <p class="text-custom-violet m-auto">Digitale strategieën</p>
+        </div>
+      </div>
+
+      <div class="flex justify-between">
+
+        <button class="size-16 bg-custom-lime rounded-full flex">
+          <div class="scale-150 m-auto"><i class="gg-arrow-left"></i></div>
+        </button>
+
+        <button class="size-16 bg-custom-lime rounded-full flex">
+          <div class="scale-150 m-auto"><i class="gg-arrow-right"></i></div>
+        </button>
+
+      </div>
+
+      <h2 class="text-white drop-shadow-lg text-4xl leading-tight">Hoe gaan we je probleem oplossen? Je doelgroep bereiken? Je verhaal sterker vertellen?</h2>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="2xl:mx-80 lg:mx-48 md:mx-24 mx-4 md:mt-48 mt-24 flex xl:flex-row flex-col md:gap-48 gap-12">
+
+  <div class="grow">
+
+    <img class="max-h-14 my-4" src="img/logo/logo-ida-pink.png">
+    <p class="text-custom-pink text-2xl">Digital agency</p>
+    
+    <div class="bg-custom-violet-bright rounded-3xl mt-8 overflow-hidden">
+
+      <div class="relative">
+        <div class="size-64 border-2 border-custom-lime rounded-full absolute -translate-x-32"></div>
+        <div class="size-64 border-2 border-custom-lime rounded-full absolute -translate-x-40 translate-y-12"></div>
+        <div class="size-64 border-2 border-custom-lime rounded-full absolute xl:translate-x-[26.8vw] translate-x-[60vw] translate-y-28"></div>
+        <div class="size-64 border-2 border-custom-lime rounded-full absolute xl:translate-x-[25vw] translate-x-[56vw] translate-y-[9rem]"></div>
+      </div>
+
+      <div class="flex p-4">
+
+        <img class="rounded-full size-28 z-20" src="./img/cards/ida.png">
+
+        <div class="m-6 z-20">
+
+          <p class="mb-2 block text-custom-pink text-xl">Tof project? Plan een call met Ida</p>
+          <a class="mb-2 block text-custom-pink/50 hover:text-white transition-colors underline underline-offset-4" href="tel:+31612224166">Bel +31612224166</a>
+          <a class="block text-custom-pink/50 hover:text-white transition-colors underline underline-offset-4" href="niks">Connect op LinkedIn</a>
+
+          <div class="mt-6 flex justify-start">
+            <button class="h-12 bg-custom-lime rounded-full flex px-6">
+              <p class="text-custom-violet m-auto">Plan nu een videocall</p>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+  </div>
+
+  <div class="flex">
+
+    <div class="text-custom-pink grow text-3xl flex flex-col gap-4 pr-20">
+
+      <a class="cursor-pointer transition underline-offset-12 underline decoration-white/0 hover:text-white hover:decoration-white duration-300">Aanpak</a>
+      <a class="cursor-pointer transition underline-offset-12 underline decoration-white/0 hover:text-white hover:decoration-white duration-300">Diensten</a>
+      <a class="cursor-pointer transition underline-offset-12 underline decoration-white/0 hover:text-white hover:decoration-white duration-300">Onze klanten</a>
+      <a class="cursor-pointer transition underline-offset-12 underline decoration-white/0 hover:text-white hover:decoration-white duration-300">Team</a>
+
+    </div>
+
+    <div class="text-custom-pink/70 grow text-xl flex flex-col gap-4 pr-20">
+
+      <a class="cursor-pointer transition underline-offset-12 underline decoration-white/0 hover:text-white hover:decoration-white duration-300">Ding</a>
+      <a class="cursor-pointer transition underline-offset-12 underline decoration-white/0 hover:text-white hover:decoration-white duration-300">Bedrijf</a>
+      <a class="cursor-pointer transition underline-offset-12 underline decoration-white/0 hover:text-white hover:decoration-white duration-300">Tekst</a>
+      <a class="cursor-pointer transition underline-offset-12 underline decoration-white/0 hover:text-white hover:decoration-white duration-300">Tekst hier</a>
+      <a class="cursor-pointer transition underline-offset-12 underline decoration-white/0 hover:text-white hover:decoration-white duration-300">Cool Bedrijf</a>
+      <a class="cursor-pointer transition underline-offset-12 underline decoration-white/0 hover:text-white hover:decoration-white duration-300">Wow</a>
+      <a class="cursor-pointer transition underline-offset-12 underline decoration-white/0 hover:text-white hover:decoration-white duration-300">Placeholder</a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="2xl:mx-80 lg:mx-48 md:mx-24 mx-4 md:mt-32 mt-12 border-t border-custom-pink/40">
+
+  <div class="py-12 flex lg:flex-row flex-col-reverse gap-8 justify-between">
+
+    <div class="text-custom-pink flex lg:flex-row flex-col gap-6">
+      <p>© Ida digital agency 2024. All rights reserved.</p>
+      <a class="transition underline-offset-12 underline decoration-white/0 hover:text-white hover:decoration-white duration-300" href="niks">Privacy statement</a>
+      <a class="transition underline-offset-12 underline decoration-white/0 hover:text-white hover:decoration-white duration-300" href="niks">Terms & Conditions</a>
+      <a class="transition underline-offset-12 underline decoration-white/0 hover:text-white hover:decoration-white duration-300" href="niks">Cookie Policy</a>
+    </div>
+
+    <div class="text-custom-pink flex justify-between gap-8">
+      <button class="hover:opacity-100 opacity-75 transition hover:scale-105 hover:text-white duration-300"><i class="gg-twitter"></i></button>
+      <button class="hover:opacity-100 opacity-75 transition hover:scale-105 hover:text-white duration-300"><i class="gg-instagram"></i></button>
+      <button class="hover:opacity-100 opacity-75 transition hover:scale-105 hover:text-white duration-300"><i class="gg-facebook"></i></button>
+      <button class="hover:opacity-100 opacity-75 transition hover:scale-105 hover:text-white duration-300"><i class="gg-windows"></i></button>
+    </div>
+
+
+  </div>
+
+</div>
+
+</body>
+</html>
